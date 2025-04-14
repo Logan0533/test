@@ -1,0 +1,79 @@
+.center {
+    position: relative;
+    /* height: 70vh; */
+    /* background: url(./image//car1.jpg) no-repeat; */
+    /* background-size: cover; */
+}
+
+.s1 {
+    /* display: none; */
+    background: url(./image//car1.jpg) no-repeat;
+    background-size: cover;
+    height: 72vh;
+}
+
+.s2 {
+    display: none;
+    height: 72vh;
+}
+
+.s2 video {
+    width: 100vw;
+    height: 72vh;
+    object-fit: cover;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+/* 轮播 */
+.swiper {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width: 140px;
+    overflow: hidden;
+    bottom: 40px;
+    left: 70px;
+
+}
+
+.swiper>div {
+    width: 45%;
+    height: 4px;
+    background-color: rgba(25, 4, 4, 0.7);
+    cursor: pointer;
+}
+
+.swiper>.active {
+    background-color: #ddd;
+    height: 5px;
+}
+
+.showName {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    /* background-color: orange; */
+    width: 600px;
+    height: 200px;
+    color: white;
+}
+
+.showName p {
+    font-size: 100px;
+    height: 100px;
+    line-height: 100px;
+    /* 设置文本无法框选选中 */
+    user-select: none;
+}
+
+/* .showName p:nth-of-type(1) {
+    font-size: 100px;
+}
+
+.showName p:nth-of-type(2) {
+    font-size: 100px;
+} */
